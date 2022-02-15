@@ -3,7 +3,7 @@
 PrintHelp()
 {
     echo
-    echo Enter 'build.bat [action]' where [action] is one of the following:
+    echo Enter 'build [action]' where [action] is one of the following:
     echo
     echo   compile           Will generate make file then compile using the make file.
     echo   clean             Remove all binaries and intermediate binaries and project files.
@@ -28,9 +28,11 @@ Compile()
 if ["$1"=""]; then
     PrintHelp
     exit
-elif ["$1"="compile"]
+elif ["$1"="compile"] -a [["$2"="linux"] -o ["$2"="mac"]]; then
     Compile
     exit
+else;
+    PrintHelp
 fi
 
 if ["$2"="mac"]; then
