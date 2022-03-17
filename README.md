@@ -1,27 +1,14 @@
 # Basic Premake setup
 
-This is very basic premake setup that a use for C++.
+This is very basic premake setup that I use for C++.
 
 # Build instructions
 
 ## Windows
 
-To generate a Visual Studio solution run:
-```
-build.bat vs2019
-```
+1. Run the [setup.bat](./scripts/setup.bat) file found in the `scripts` folder. This will download the required prerequisites for the project if they are not present yet.
+2. After that run the [Win-GenProject-vs2019.bat](./scripts/Win-GenProject-vs2019.bat) script file to generate a visual studio 2019 project.
 
-To compile run:
-```
-build.bat compile
-```
+## Mac and linux
 
-To remove binaries and project files from the directory run:
-
-```
-build.bat clean
-```
-
-## Mac & Linux
-
-idk good luck building it yourself
+This setup currently does not support mac and linux.
