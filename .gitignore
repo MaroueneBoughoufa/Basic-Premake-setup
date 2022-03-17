@@ -1,0 +1,8 @@
+scripts/__pycache__/
+.vs/
+.vscode/
+.codelite/
+*.sln
+*.vcxproj*
+*.filters
+*.user
